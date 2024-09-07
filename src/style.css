@@ -1,0 +1,112 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 40px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.resume {
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.resume:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+p{
+  margin: 0px;
+  padding: 0px;
+}
+
+section{
+  margin-bottom: 1em;
+}
+
+#profile-picture {  
+  margin-top: -130px;
+  float: right;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+  border: 5px solid #3498db;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li::before {
+  content: '•';
+  color: #3498db;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #007bff;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .resume {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p, ul {
+    font-size: 16px;
+  }
+
+  #profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,10 +1,7 @@
-var toggleButton = document.getElementById('toggle-skills');
-var skillsSection = document.getElementById('skills');
-toggleButton.addEventListener('click', function () {
-    if (skillsSection.style.display === 'none') {
-        skillsSection.style.display = 'block';
+function toggleSkills() {
+    var skillsSection = document.getElementById('skills');
+    if (skillsSection) {
+        skillsSection.classList.toggle('hidden');
     }
-    else {
-        skillsSection.style.display = 'none';
-    }
-});
+}
+window.toggleSkills = toggleSkills;
